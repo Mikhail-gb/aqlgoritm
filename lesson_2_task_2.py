@@ -4,12 +4,12 @@
 """
 
 x = input('Введите натуральное число: ')
-a = []
-b = []
+a = ''
+b = ''
 for i in x:
     if int(i) % 2 == 0:
-        a.append(i)
+        a = f'{a} {i}'
     else:
-        b.append(i)
+        b = f'{b} {i}'
 print(f'Четные числа - {a}')
 print(f'Нечетные числа - {b}')
